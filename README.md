@@ -7,7 +7,7 @@ This is a prrof of concept showing you can use Godot engine to create functional
 do `node server.js` from server folder
 go to `http://localhost:2000` in a browser
 
-## Server
+## Serverrr
 
 The server is a very simple Node server that uses express `npm install express` to serve up files directly from the server and websocket (ws) `npm install ws` for communcation with clients
 The server tracks 4 booleans (Opt1,Opt2,Opt3,Opt4) in a variable called pack.
