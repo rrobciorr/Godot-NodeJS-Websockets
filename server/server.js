@@ -106,7 +106,7 @@ wss.on('connection', function connection(ws, req) {
 
 // Express //
 // Serves up the HTML5 Export // 
-const HTTP_PORT = "ws://godot2.onrender.com"// Port for Express
+const HTTP_PORT = "ws://godot2.onrender.com:2000"// Port for Express
 var express = require('express'); 
 var app = express(); 
 var serv = require('http').Server(app);
