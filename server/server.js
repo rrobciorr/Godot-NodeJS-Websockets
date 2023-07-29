@@ -2,7 +2,7 @@
 
 // Communicates with Godot Clients
 const WebSocket = require('ws');
-var wss = new WebSocket.Server('wss://sok.onrender.com');
+var wss = new WebSocket.Server({port: 5000});
 var CLIENTS = {}; // hold client stuff
 function noop() {} 
 
@@ -106,7 +106,7 @@ wss.on('connection', function connection(ws, req) {
 
 // Express //
 // Serves up the HTML5 Export // 
-const HTTP_PORT = 2000 // Port for Express
+const HTTP_PORT = "ws://myservice.onrender.com"// Port for Express
 var express = require('express'); 
 var app = express(); 
 var serv = require('http').Server(app);
