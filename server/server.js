@@ -1,8 +1,8 @@
 // WebSocket // 
 
 // Communicates with Godot Clients
-const WebSocket = require('wss://sok.onrender.com');
-var wss = new WebSocket.Server({port: 5000});
+const WebSocket = require('ws');
+var wss = new WebSocket.Server('wss://sok.onrender.com');
 var CLIENTS = {}; // hold client stuff
 function noop() {} 
 
